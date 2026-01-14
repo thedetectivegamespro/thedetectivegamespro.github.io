@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بريد د. كريم - Gmail</title>
+    <link rel="stylesheet" href="emails.css">
+</head>
+<body>
+    
+    <!-- Gmail Container -->
+    <div class="gmail-container">
+        
+        <!-- Header -->
+        <header class="gmail-header">
+            <div class="header-right">
+                <div class="menu-icon">☰</div>
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath fill='%23EA4335' d='M5 7h30l-15 10z'/%3E%3Cpath fill='%23FBBC04' d='M35 7v20l-15-10z'/%3E%3Cpath fill='%2334A853' d='M5 7v20l15-10z'/%3E%3Cpath fill='%234285F4' d='M5 27h30v6H5z'/%3E%3C/svg%3E" alt="Gmail" class="gmail-logo">
+                <span class="logo-text">Gmail</span>
+            </div>
+            
+            <div class="search-bar">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="بحث في البريد" readonly>
+                <span class="filter-icon">⚙</span>
+            </div>
+            
+            <div class="header-left">
+                <span class="icon-btn">❓</span>
+                <span class="icon-btn">⚙</span>
+                <span class="icon-btn">⋮</span>
+                <div class="profile-icon">K</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="gmail-main">
+            
+            <!-- Sidebar -->
+            <aside class="gmail-sidebar">
+                <button class="compose-btn">
+                    <span class="compose-icon">✏️</span>
+                    <span>إنشاء</span>
+                </button>
+
+                <nav class="sidebar-nav">
+                    <div class="nav-item active">
+                        <span class="nav-icon">📥</span>
+                        <span class="nav-label">الوارد</span>
+                        <span class="nav-count">47</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">⭐</span>
+                        <span class="nav-label">المميزة بنجمة</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">⏰</span>
+                        <span class="nav-label">تم إرجاؤها</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">📤</span>
+                        <span class="nav-label">المرسلة</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">📝</span>
+                        <span class="nav-label">المسودات</span>
+                        <span class="nav-count">3</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">🗑️</span>
+                        <span class="nav-label">المهملات</span>
+                    </div>
+                    
+                    <div class="nav-divider"></div>
+                    
+                    <div class="nav-section-title">التصنيفات</div>
+                    <div class="nav-item">
+                        <span class="nav-icon label-icon" style="color: #d93025;">●</span>
+                        <span class="nav-label">عاجل</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon label-icon" style="color: #1a73e8;">●</span>
+                        <span class="nav-label">مشروع Atlas</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon label-icon" style="color: #f29900;">●</span>
+                        <span class="nav-label">شخصي</span>
+                    </div>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <div class="storage-info">
+                        <div class="storage-bar">
+                            <div class="storage-used" style="width: 35%"></div>
+                        </div>
+                        <p>استخدام 5.2 جيجابايت من 15 جيجابايت</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Email List View -->
+            <div class="email-list-container" id="emailListView">
+                <div class="list-toolbar">
+                    <div class="toolbar-right">
+                        <input type="checkbox" class="select-all">
+                        <span class="toolbar-icon">↻</span>
+                        <span class="toolbar-icon">⋮</span>
+                    </div>
+                    <div class="toolbar-left">
+                        <span class="page-info">1-50 من 47</span>
+                        <span class="toolbar-icon">‹</span>
+                        <span class="toolbar-icon">›</span>
+                    </div>
+                </div>
+
+                <div class="email-list" id="emailList">
+
+    <!-- Email 1 - ريتشارد كول -->
+    <div class="email-item unread" data-email="1">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">ريتشارد كول</div>
+        <div class="email-content">
+            <span class="email-subject">إعادة: مشروع Atlas - اقتراح تعاون</span>
+            <span class="email-snippet"> - دكتور كريم، HelixCorp جاهزة لتقديم تمويل ضخم. هذه فرصة لا يمكن تجاهلها...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+            <span class="label" style="background: #d93025;">عاجل</span>
+        </div>
+        <div class="email-time">أمس 9:42 م</div>
+    </div>
+
+    <!-- Email 2 - ليلى منصور -->
+    <div class="email-item unread" data-email="2">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">ليلى منصور</div>
+        <div class="email-content">
+            <span class="email-subject">Atlas، مارك، وصمتك</span>
+            <span class="email-snippet"> - وصلني أن مارك طلب منك عدم نشر نتائج Atlas، ماذا ستفعل بهذا الرقم من الناخبين؟...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+        </div>
+        <div class="email-time">أمس 7:15 م</div>
+    </div>
+
+    <!-- Email 3 - د. جوناثان ريد -->
+    <div class="email-item unread" data-email="3">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">د. جوناثان ريد</div>
+        <div class="email-content">
+            <span class="email-subject">إعادة: اجتماع لجنة الأخلاقيات - مخاوف جدية</span>
+            <span class="email-snippet"> - كريم، لا يمكنك تجاهل التداعيات الأخلاقية لمشروع Atlas، هناك من يريد استغلال النتائج...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+            <span class="label" style="background: #d93025;">عاجل</span>
+        </div>
+        <div class="email-time">أمس 3:28 م</div>
+    </div>
+
+    <!-- Email 4 - مارك إليسون -->
+    <div class="email-item unread" data-email="4">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">مارك إليسون</div>
+        <div class="email-content">
+            <span class="email-subject">عاجل: إعادة تقييم الشراكة</span>
+            <span class="email-snippet"> - قررت أن حملتي لن ترتبط بالمشروع الآن. تقارير الإعلام بدأت تلاحقنا، الوضع حساس...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #d93025;">عاجل</span>
+        </div>
+        <div class="email-time">أمس 1:55 م</div>
+    </div>
+
+    <!-- Email 5 - إدارة الجامعة -->
+    <div class="email-item unread" data-email="5">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important"></span>
+        </div>
+        <div class="email-sender">إدارة الجامعة</div>
+        <div class="email-content">
+            <span class="email-subject">تحديث الأمان - تسجيل الدخول إلى المبنى</span>
+            <span class="email-snippet"> - سيتم تحديث نظام الأمان في المبنى. تأكد من تسجيل الدخول والخروج بدقة...</span>
+        </div>
+        <div class="email-labels"></div>
+        <div class="email-time">أمس 11:20 ص</div>
+    </div>
+
+    <!-- Email 6 - ليلى منصور Previous -->
+    <div class="email-item unread" data-email="6">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">ليلى منصور</div>
+        <div class="email-content">
+            <span class="email-subject">تذكير: وثائق المشروع</span>
+            <span class="email-snippet"> - أفهم حرصك على السرية، لكن بعض الجهات تراقب خطواتك. هل ستساعدني أم ستتجاهل الحقيقة؟...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+        </div>
+        <div class="email-time">15 يناير</div>
+    </div>
+
+    <!-- Email 7 - ريتشارد كول Previous -->
+    <div class="email-item unread" data-email="7">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">ريتشارد كول</div>
+        <div class="email-content">
+            <span class="email-subject">اقتراح الشراكة - HelixCorp</span>
+            <span class="email-snippet"> - HelixCorp ترى إمكانيات ضخمة في أبحاثك. التمويل والمعدات جاهزة، هل ستتعاون؟...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+        </div>
+        <div class="email-time">14 يناير</div>
+    </div>
+
+    <!-- Email 8 - د. جوناثان ريد Previous -->
+    <div class="email-item unread" data-email="8">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important">⚠</span>
+        </div>
+        <div class="email-sender">د. جوناثان ريد</div>
+        <div class="email-content">
+            <span class="email-subject">ملاحظة: الوقت والصمت</span>
+            <span class="email-snippet"> - كريم، المشكل ليس في Atlas، بل في صمتك ومن تسمح لهم بالاقتراب. سأنتظر وأراقب...</span>
+        </div>
+        <div class="email-labels"></div>
+        <div class="email-time">13 يناير</div>
+    </div>
+
+    <!-- Email 9 - جديد - الأمن -->
+    <div class="email-item unread" data-email="9">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important"></span>
+        </div>
+        <div class="email-sender">Daniel Harper – University Systems</div>
+        <div class="email-content">
+            <span class="email-subject">إعادة: طلب تمديد ساعات العمل</span>
+            <span class="email-snippet"> - تمت الموافقة على طلبك للعمل حتى 10 مساءً. سأكون في المناوبة المسائية، كن حذراً...</span>
+        </div>
+        <div class="email-labels"></div>
+        <div class="email-time">12 يناير</div>
+    </div>
+
+    <!-- Email 10 - سارة أحمد -->
+    <div class="email-item unread" data-email="10">
+        <div class="email-left">
+            <input type="checkbox" onclick="event.stopPropagation()">
+            <span class="star">☆</span>
+            <span class="important"></span>
+        </div>
+        <div class="email-sender">سارة أحمد - مساعدة باحث</div>
+        <div class="email-content">
+            <span class="email-subject">تقرير التجارب الأسبوعي - أسبوع 3</span>
+            <span class="email-snippet"> - إليك ملخص نتائج التجارب لهذا الأسبوع. العينات أظهرت نتائج واعدة، لكن هناك بعض المفاجآت...</span>
+        </div>
+        <div class="email-labels">
+            <span class="label" style="background: #1a73e8;">Atlas</span>
+        </div>
+        <div class="email-time">10 يناير</div>
+    </div>
+
+</div>
+
+            </div>
+
+            <!-- Email Detail View (Hidden by default) -->
+            <div class="email-detail-container" id="emailDetailView" style="display: none;">
+                <div class="detail-toolbar">
+                    <div class="toolbar-right">
+                        <span class="toolbar-icon back-btn" id="backBtn">→</span>
+                        <span class="toolbar-icon">🗑️</span>
+                        <span class="toolbar-icon">📧</span>
+                        <span class="toolbar-icon">⏰</span>
+                        <span class="toolbar-icon">⋮</span>
+                    </div>
+                    <div class="toolbar-left">
+                        <span class="page-info">1 من 47</span>
+                        <span class="toolbar-icon">‹</span>
+                        <span class="toolbar-icon">›</span>
+                    </div>
+                </div>
+
+                <div class="email-detail" id="emailDetail">
+                    <!-- Email detail will be inserted here dynamically -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        // Email Data
+        const emailsData = {
+            1: {
+                sender: 'ريتشارد كول',
+                email: 'richard.cole@helixcorp.com',
+              subject: 'إعادة: مشروع Atlas - اقتراح تعاون',
+                time: 'أمس 9:42 م',
+                avatar: 'R',
+                labels: ['Atlas', 'عاجل'],
+                body: `
+                    <p>د. الحداد،</p>
+
+<p>
+وصلني أنك متردد.
+هذا مفهوم، لكنه غير عملي.
+</p>
+
+<p>
+Atlas ليس مشروعًا جامعيًا بعد الآن،
+وأي شخص يفهم السوق سيراه كذلك.
+</p>
+
+<p>
+نحن لا نشتري العلم،
+نشتري السيطرة على تبعاته.
+</p>
+
+<p>
+إن قررت الاستمرار وحدك،
+فأقترح أن تراجع من سيحميك عندما تبدأ الأسئلة.
+</p>
+
+<p>
+العروض لا تبقى مفتوحة طويلًا.
+</p>
+
+<p>ريتشارد</p>
+
+                `
+            },
+            2: {
+    sender: 'ليلى منصور',
+    email: 'layla.mansour@alhadath.com',
+    subject: 'Atlas، مارك، وصمتك,',
+    time: 'أمس 7:15 م',
+    avatar: 'L',
+    labels: ['Atlas'],
+    body: `
+        <p>دكتور كريم،</p>
+
+<p>
+<p>دكتور كريم،</p>
+
+<p>
+وصلني أن مارك طلب منك بوضوح عدم نشر نتائج Atlas في هذه المرحلة.
+لم يقلها كأمر طبعًا، قالها كـ "نصيحة".
+</p>
+
+<p>
+أنا مهتمة برأيك، لا برده.
+</p>
+
+<p>
+هل ترى أن من الطبيعي أن يطلب سياسي من باحث إيقاف النشر
+بينما حملته تعلن أنها حصدت حتى الآن 20592 صوتًا مؤكدًا؟
+</p>
+
+<p>
+هل تعتقد أن هذا الرقم صُنع بالخطاب فقط،
+أم أن هناك من فضّل الصمت في الوقت المناسب؟
+</p>
+
+<p>
+لا أحتاج تصريحًا جاهزًا.
+أحتاج أن أفهم أين تقف.
+</p>
+
+<p>
+إما أن أكتب عن عالم اختار الانتظار،
+أو عن عالم اختار أن يُستخدم.
+</p>
+
+<p>ليلى</p>
+
+
+    `
+}
+,
+            3: {
+                sender: 'د. جوناثان ريد',
+                email: 'j.reed@pcu.edu',
+                subject: 'إعادة: اجتماع لجنة الأخلاقيات - مخاوف جدية',
+                time: 'أمس 3:28 م',
+                avatar: 'J',
+                labels: ['Atlas', 'عاجل'],
+                body: `
+                    <p>كريم،</p>
+
+<p>
+أعرف أنك ترى نفسي كعقبة.
+هذا مريح لك، لكنه غير دقيق.
+</p>
+
+<p>
+المشكلة ليست في Atlas،
+بل في توقيتك، وصمتك، ومن تسمح له بالاقتراب.
+</p>
+
+<p>
+عندما يؤجل الباحث النشر إرضاءً للسياسة،
+فهو لم يعد باحثًا، بل شريكًا صامتًا.
+</p>
+
+<p>
+لا تقلق، لن أوقفك.
+الناس دائمًا يفضّلون أن يروا الخطأ مكتملًا.
+</p>
+
+<p>
+وأنا صبور.
+</p>
+
+<p>جوناثان</p>
+
+                `
+            },
+            4: {
+                sender: 'مارك إليسون',
+                email: 'mark.ellison@campaign2026.com',
+                subject: 'عاجل: إعادة تقييم الشراكة',
+                time: 'أمس 1:55 م',
+                avatar: 'M',
+                labels: ['عاجل'],
+                body: `
+                    <p>كريم،</p>
+
+<p>
+سأكون واضحًا لأن الوقت لا يسمح بالتفلسف.
+النتائج التي تعمل عليها لا تخدمني الآن.
+</p>
+
+<p>
+الناس لا تريد تعقيدًا ولا نماذج تنبؤية.
+تريد شعورًا بالثقة، وأنا أبنيه بصعوبة.
+</p>
+
+<p>
+أي نشر في هذه المرحلة سيُستخدم ضدي،
+حتى لو كنتَ مقتنعًا بنزاهته.
+</p>
+
+<p>
+بعد الانتخابات، نتحدث بهدوء.
+قبلها، الأفضل أن يبقى Atlas حيث هو.
+</p>
+
+<p>
+لا تجعلني أضطر لتبرير شيء لم أطلبه أصلًا.
+</p>
+
+<p>مارك</p>
+
+                `
+            },
+            5: {
+                sender: 'إدارة الجامعة',
+                email: 'security@pcu.edu',
+                subject: 'تحديث الأمان - تسجيل الدخول إلى المبنى',
+                time: 'أمس 11:20 ص',
+                avatar: '🏛️',
+                labels: [],
+                body: `
+                    <div style="background: #f0f0f0; padding: 20px; border-radius: 5px;">
+                        <h3 style="color: #1a4d7a;">إشعار رسمي من قسم الأمن</h3>
+                    </div>
+                    
+                    <p>السادة أعضاء هيئة التدريس والباحثين،</p>
+                    
+                    <p>نود إعلامكم بأنه سيتم تحديث نظام الأمان الإلكتروني في مبنى الأبحاث (Research Building) اعتباراً من 10 يناير 2026.</p>
+                    
+                    <p><strong>التغييرات الرئيسية:</strong></p>
+                    <ul>
+                        <li>تم تركيب كاميرات مراقبة جديدة في جميع المداخل والممرات</li>
+                        <li>تحديث نظام البطاقات الإلكترونية - يرجى استخدام بطاقتكم الجامعية الجديدة</li>
+                        <li>تسجيل جميع عمليات الدخول والخروج إلكترونياً</li>
+                        <li>المبنى مؤمّن بعد الساعة 8:00 مساءً - يتطلب الدخول بعد هذا الوقت إذناً خاصاً</li>
+                    </ul>
+                    
+                    <p><strong>للحصول على إذن العمل المسائي:</strong></p>
+                    <p>يرجى إرسال طلب إلى قسم الأمن قبل 24 ساعة على الأقل عبر البريد الإلكتروني: security@pcu.edu</p>
+                    
+                    <p>في حال وجود أي استفسارات، يمكنكم التواصل مع:</p>
+                    <p><strong>Thomas Blake</strong> - ضابط الأمن الرئيسي<br>
+                    المناوبة المسائية: 4:00 م - 12:00 ص<br>
+                    الهاتف الداخلي: 2547</p>
+                    
+                    <p>نشكر تعاونكم في الحفاظ على أمن الحرم الجامعي.</p>
+                    
+                    <p>قسم الأمن - جامعة ساحل المحيط الهادئ</p>
+                `
+            },
+            6: {
+                sender: 'ليلى منصور',
+                email: 'layla.mansour@alhadath.com',
+                subject: 'تذكير: وثائق المشروع' ,
+                time: '15 يناير',
+                avatar: 'L',
+                labels: ['Atlas'],
+                body: `
+                    <p>دكتور كريم،</p>
+                    
+                    <p>أتفهم حرصك على السرية وحماية بياناتك البحثية، لكن يجب أن تدرك أن الرأي العام له الحق في معرفة تأثير الأبحاث الممولة من الجامعة الحكومية.</p>
+                    
+                    <p>لقد تحدثت مع عدة مصادر داخل الجامعة، وهناك قلق متزايد حول اهتمام شركات خاصة بنتائج أبحاثك. بعض هذه الشركات لديها سجل مثير للجدل.</p>
+                    
+                    <p>كصحفية، واجبي هو كشف الحقيقة. يمكنك إما التعاون معي وتقديم روايتك، أو سأضطر للاعتماد على مصادر أخرى قد لا تكون دقيقة.</p>
+                    
+                    <p>أنا لا أبحث عن فضيحة - أبحث عن الحقيقة.</p>
+                    
+                    <p>في انتظار ردك،<br>
+                    ليلى منصور</p>
+                `
+            },
+            7: {
+                sender: 'ريتشارد كول',
+                email: 'richard.cole@helixcorp.com',
+                subject: 'اقتراح الشراكة - HelixCorp',
+                time: '14 يناير',
+                avatar: 'R',
+                labels: ['Atlas'],
+                body: `
+                    <p>أهلاً دكتور كريم،</p>
+                    
+                    <p>اسمي ريتشارد كول، المدير التنفيذي في شركة HelixCorp. قرأت مؤخراً عن مشروع Atlas الخاص بك، وأنا معجب جداً بالمنهجية المبتكرة التي تستخدمها.</p>
+                    
+                    <p>شركتنا تعمل في مجال الصناعات الكيميائية ومعالجة المياه، ونعتقد أن نتائج أبحاثك يمكن أن تكون ذات قيمة كبيرة لأعمالنا.</p>
+                    
+                    <p><strong>ما نقدمه:</strong></p>
+                    <ul>
+                        <li>تمويل سخي لاستكمال أبحاثك</li>
+                        <li>إمكانية الوصول إلى مختبراتنا ومعداتنا المتقدمة</li>
+                        <li>فريق من المهندسين للمساعدة في التطبيقات العملية</li>
+                        <li>حقوق النشر الأكاديمي محفوظة لك بالكامل</li>
+                    </ul>
+                    
+                    <p>نود مناقشة إمكانية التعاون. هل أنت متاح لاجتماع الأسبوع القادم؟</p>
+                    
+                    <p>مع أطيب التحيات،<br>
+                    ريتشارد كول</p>
+                `
+            },
+            8: {
+                sender: 'د. جوناثان ريد',
+                email: 'j.reed@pcu.edu',
+                subject: 'ملاحظة: الوقت والصمت',
+                time: '13 يناير',
+                avatar: 'J',
+                labels: [],
+                body: `
+                    <p>كريم،</p>
+
+<p>
+أتابع ما تفعله بصمت، كما أفعل دائمًا.
+</p>
+
+<p>
+مشكلتك أنك مقتنع أن النية الجيدة تبرر النتيجة.
+هذه حجة طلاب سنة أولى، لا باحث يفترض به أن يعرف أفضل.
+</p>
+
+<p>
+Atlas مثال ممتاز على كيف يمكن للذكاء
+أن يصبح خطرًا عندما ينفصل عن الضمير.
+</p>
+
+<p>
+لا تقلق، لن أعارضك علنًا.
+سأنتظر فقط حتى تثبت أنك كنت مخطئًا.
+</p>
+
+<p>
+التاريخ يقوم بالباقي.
+</p>
+
+<p>جوناثان</p>
+
+                `
+            },
+            9: {
+                sender: 'Daniel Harper – University Systems',
+                email: 'security@pcu.edu',
+                subject: 'إعادة: طلب تمديد ساعات العمل',
+                time: '12 يناير',
+                avatar: 'T',
+                labels: [],
+                body: `
+                    <p>هذه رسالة آلية.</p>
+
+<p>
+تم تسجيل نشاط غير معتاد على خادم الأبحاث المرتبط بحسابك.
+</p>
+
+<p>
+تم إنشاء نسخة احتياطية تلقائية.
+</p>
+
+<p>
+لا يلزم اتخاذ أي إجراء في الوقت الحالي.
+</p>
+
+<p>
+يرجى عدم الرد على هذه الرسالة.
+</p>
+
+                `
+            },
+            10: {
+                sender: 'سارة أحمد - مساعدة باحث',
+                email: 's.ahmed@pcu.edu',
+                subject: 'تقرير التجارب الأسبوعي - أسبوع 3',
+                time: '10 يناير',
+                avatar: 'S',
+                labels: ['Atlas'],
+                body: `
+                    <p>دكتور كريم،</p>
+                    
+                    <p>إليك ملخص نتائج التجارب لهذا الأسبوع:</p>
+                    
+                    <p><strong>العينات A1-A15:</strong><br>
+                    النتائج الأولية واعدة جداً! معدل الدقة وصل إلى 94.7% وهو أعلى بكثير من توقعاتنا الأولية.</p>
+                    
+                    <p><strong>العينات B1-B10:</strong><br>
+                    بحاجة لمزيد من التحليل. هناك بعض التباينات غير المتوقعة.</p>
+                    
+                    <p><strong>ملاحظات:</strong></p>
+                    <ul>
+                        <li>المعدات الجديدة تعمل بشكل ممتاز</li>
+                        <li>تم حفظ جميع البيانات في السيرفر الآمن</li>
+                        <li>سأكون في إجازة الأسبوع القادم (15-20 يناير)</li>
+                    </ul>
+                    
+                    <p>التقرير التفصيلي مرفق.</p>
+                    
+                    <p>سارة أحمد</p>
+                `
+            }
+        };
+
+        // Get DOM elements
+        const emailList = document.getElementById('emailList');
+        const emailListView = document.getElementById('emailListView');
+        const emailDetailView = document.getElementById('emailDetailView');
+        const emailDetail = document.getElementById('emailDetail');
+        const backBtn = document.getElementById('backBtn');
+
+        // Add click event to all email items
+        const emailItems = document.querySelectorAll('.email-item');
+        emailItems.forEach(item => {
+            item.addEventListener('click', function(e) {
+                const emailId = this.getAttribute('data-email');
+                showEmailDetail(emailId);
+                
+                // Remove unread class
+                this.classList.remove('unread');
+            });
+        });
+
+        // Show email detail
+        function showEmailDetail(emailId) {
+            const email = emailsData[emailId];
+            
+            if (!email) return;
+
+            // Generate labels HTML
+            let labelsHTML = '';
+            if (email.labels.length > 0) {
+                email.labels.forEach(label => {
+                    const color = label === 'Atlas' ? '#1a73e8' : label === 'عاجل' ? '#d93025' : '#f29900';
+                    labelsHTML += `<span class="detail-label" style="background: ${color};">${label}</span>`;
+                });
+            }
+
+            // Generate email detail HTML
+            const detailHTML = `
+                <div class="detail-header">
+                    <h2 class="detail-subject">${email.subject}</h2>
+                    <div class="detail-labels">
+                        ${labelsHTML}
+                    </div>
+                </div>
+                
+                <div class="detail-sender-info">
+                    <div class="sender-avatar">${email.avatar}</div>
+                    <div class="sender-details">
+                        <div class="sender-name-line">
+                            <span class="sender-name">${email.sender}</span>
+                            <span class="sender-email">&lt;${email.email}&gt;</span>
+                        </div>
+                        <div class="sender-to">إلى: أنا</div>
+                    </div>
+                    <div class="detail-time">${email.time}</div>
+                    <div class="detail-actions">
+                        <span class="action-icon">↩</span>
+                        <span class="action-icon">⋮</span>
+                    </div>
+                </div>
+                
+                <div class="detail-body">
+                    ${email.body}
+                </div>
+                
+                <div class="detail-reply">
+                    <button class="reply-btn">رد ↩</button>
+                    <button class="reply-btn">إعادة توجيه →</button>
+                </div>
+            `;
+
+            emailDetail.innerHTML = detailHTML;
+            
+            // Show detail view, hide list view
+            emailListView.style.display = 'none';
+            emailDetailView.style.display = 'block';
+            
+            // Scroll to top
+            emailDetailView.scrollTop = 0;
+        }
+
+        // Back button
+        backBtn.addEventListener('click', function() {
+            emailListView.style.display = 'block';
+            emailDetailView.style.display = 'none';
+        });
+    </script>
+
+</body>
+</html>

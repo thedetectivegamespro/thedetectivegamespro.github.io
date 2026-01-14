@@ -1,0 +1,36 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "ادّعوا دعمه… لكنهم خافوا من أن يُكمل طريقه. ويرى النور",
+      "answer": "Atlas",
+      "characters": 5
+    },
+    {
+      "id": 2,
+      "question": "تكثر من الأسئلة، وتعقد الإجابات. تعلمك كيف تفهم الألم، لكن ليس كيف توقفه. تحلل السقوط، ولا تمد يدا لمن يسقط.",
+      "answer": "philosophy",
+      "characters": 10
+    },
+    {
+      "id": 3,
+      "question": "المخدوعين بوعود مارك الكاذبة، صدّقوا المستقبل… فصوّتوا للماضي.",
+      "answer": "20592",
+      "characters": 5
+    },
+    {
+      "id": 4,
+      "question": "المنبر الذي حوّل الأكاذيب إلى عناوين، والشك إلى رأي عام.",
+      "answer": "Alhadath",
+      "characters": 8
+    },
+    {
+      "id": 5,
+      "question": "مصدر كل الشرور، يلوث كل ما يلمسه",
+      "answer": "HelixCorp",
+      "characters": 9
+    }
+  ],
+  "submissions": [],
+  "note": "This file serves as a template. Actual submission logs are stored in browser localStorage and can be downloaded from the interface."
+}
