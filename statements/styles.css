@@ -1,0 +1,491 @@
+/* Import Arabic-friendly fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amiri', 'Times New Roman', serif;
+    background-color: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 1.8;
+    padding: 20px;
+}
+
+/* Document container - A4 proportions */
+.document {
+    max-width: 210mm;
+    margin: 0 auto;
+    background: white;
+    padding: 25mm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 297mm;
+}
+
+/* Header */
+.document-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.department-seal {
+    font-size: 48px;
+    color: #1a1a1a;
+    line-height: 1;
+}
+
+.header-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.department {
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Case info bar */
+.case-info {
+    display: flex;
+    gap: 30px;
+    padding: 15px 20px;
+    background: #f9f9f9;
+    border-right: 4px solid #1a1a1a;
+    margin-bottom: 30px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+}
+
+.case-number,
+.case-classification,
+.case-date {
+    font-weight: 600;
+}
+
+/* Main content */
+.main-content {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+/* Suspects list */
+.suspects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.suspect-card {
+    display: grid;
+    grid-template-columns: 60px 1fr auto;
+    gap: 20px;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    background: #fafafa;
+    transition: all 0.3s ease;
+}
+
+.suspect-card:hover {
+    border-color: #1a1a1a;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.suspect-number {
+    font-size: 24px;
+    font-weight: 700;
+    color: #666;
+    font-family: 'Cairo', sans-serif;
+}
+
+.suspect-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.suspect-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+.suspect-relation {
+    font-size: 16px;
+    color: #666;
+}
+
+.interview-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.status-indicator {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.interview-status.interviewed {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.interview-status.interviewed .status-indicator {
+    background: #2e7d32;
+}
+
+.interview-status.pending {
+    background: #fff3e0;
+    color: #e65100;
+}
+
+.interview-status.pending .status-indicator {
+    background: #e65100;
+}
+
+.view-link {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-family: 'Cairo', sans-serif;
+    padding: 10px 20px;
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.view-link:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* Interrogation page */
+.interrogation-header {
+    margin-bottom: 30px;
+}
+
+.interrogation-header h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background: #1a1a1a;
+    color: white;
+}
+
+.interrogation-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #e0e0e0;
+}
+
+.meta-row {
+    display: flex;
+    gap: 10px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+}
+
+.meta-label {
+    font-weight: 600;
+    color: #666;
+}
+
+.meta-value {
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+.status-pending {
+    color: #e65100;
+}
+
+/* Transcript */
+.transcript {
+    margin-bottom: 40px;
+}
+
+.exchange {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.exchange:last-child {
+    border-bottom: none;
+}
+
+.timestamp {
+    font-family: 'Cairo', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: #666;
+    margin-bottom: 12px;
+    padding: 4px 8px;
+    background: #f0f0f0;
+    display: inline-block;
+}
+
+.question,
+.answer {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.question .label {
+    font-weight: 700;
+    font-size: 18px;
+    color: #1a1a1a;
+    flex-shrink: 0;
+}
+
+.answer .label {
+    font-weight: 700;
+    font-size: 18px;
+    color: #666;
+    flex-shrink: 0;
+}
+
+.question p,
+.answer p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.question p {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.answer p {
+    color: #333;
+}
+
+/* Interrogation footer */
+.interrogation-footer {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 2px solid #1a1a1a;
+}
+
+.interrogation-footer p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.signatures {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.signature-block {
+    text-align: center;
+}
+
+.signature-line {
+    height: 2px;
+    background: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.signature-block p {
+    font-family: 'Cairo', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #666;
+}
+
+/* Pending interview notice */
+.pending-notice {
+    padding: 30px;
+}
+
+.notice-box {
+    background: #fff3e0;
+    border-right: 4px solid #e65100;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.notice-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #e65100;
+    margin-bottom: 15px;
+}
+
+.notice-box p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.background-info,
+.investigator-notes {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-right: 3px solid #666;
+}
+
+.background-info h3,
+.investigator-notes p strong {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.background-info p,
+.investigator-notes p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+}
+
+.background-info ul {
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.background-info li {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+.document-footer {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 2px solid #e0e0e0;
+    text-align: center;
+    color: #666;
+    font-family: 'Cairo', sans-serif;
+    font-size: 13px;
+}
+
+.document-footer p {
+    margin-bottom: 5px;
+}
+
+.footer-meta {
+    font-size: 12px;
+}
+
+.back-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    border: 1px solid #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
+/* Print styles */
+@media print {
+    body {
+        background: white;
+        padding: 0;
+    }
+
+    .document {
+        box-shadow: none;
+        margin: 0;
+        padding: 20mm;
+    }
+
+    .suspect-card:hover {
+        border-color: #e0e0e0;
+        box-shadow: none;
+    }
+
+    .view-link,
+    .back-link {
+        display: none;
+    }
+
+    .exchange {
+        page-break-inside: avoid;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .document {
+        padding: 15px;
+        min-height: auto;
+    }
+
+    .document-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .case-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .suspect-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .interrogation-meta {
+        grid-template-columns: 1fr;
+    }
+
+    .signatures {
+        grid-template-columns: 1fr;
+    }
+
+    .header-content h1 {
+        font-size: 22px;
+    }
+
+    .suspect-name {
+        font-size: 18px;
+    }
+}
